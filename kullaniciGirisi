@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        String kullaniciAdi="limon";
+        String sifre="go1234";
+        Scanner scanner=new Scanner(System.in);
+        String metin;
+        String metin2;
+
+        while(true){
+            System.out.println("Kullanıcı adınızı giriniz.");
+            metin=scanner.nextLine();
+            System.out.println("Şifrenizi giriniz.");
+            metin2=scanner.nextLine();
+
+            if(kullaniciAdi.equals(metin)){
+                if(sifre.equals(metin2)){
+                    System.out.println("Başarıyla giriş yaptınız.");
+                    break;
+                }
+            }
+            else System.out.println("Girdiğiniz bilgileri kontrol ediniz.");
+        }
+
+    }
+}
